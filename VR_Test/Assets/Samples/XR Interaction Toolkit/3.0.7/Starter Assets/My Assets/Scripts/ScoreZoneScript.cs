@@ -6,6 +6,7 @@ public class ScoreZoneScript : MonoBehaviour
     public GameObject targetPrefab; // Objet assigné via l'Inspector
     public bool destroyOnScore = false; // Activer/désactiver la destruction
     public float destroyDelay = 0f; // Temps avant destruction
+    public int scoreGranted = 1; // Temps avant destruction
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,7 +14,7 @@ public class ScoreZoneScript : MonoBehaviour
         if (targetPrefab != null && IsSamePrefab(other.gameObject, targetPrefab))
         {
             // Ajoute 1 point au score
-            ScoreScript.Instance.AddScore(1);
+            ScoreScript.Instance.AddScore(scoreGranted);
 
             // Vérifie si on doit détruire l'objet
             if (destroyOnScore)
