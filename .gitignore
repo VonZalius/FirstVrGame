@@ -1,0 +1,21 @@
+# Fichiers Unity à ignorer
+Library/
+Logs/
+Temp/
+Obj/
+UserSettings/
+Packages/
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.pidb
+*.booproj
+*.svd
+*.userprefs
