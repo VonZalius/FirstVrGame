@@ -36,7 +36,7 @@ public class ScoreScript : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = "Score: " + Score;
+            scoreText.text = "" + Score;
         }
     }
 }
